@@ -1,0 +1,12 @@
+<h1>
+  {{title}}
+  <button [routerLink]="['/list']"
+          routerLinkActive="active">
+  Students</button>
+  <button [routerLink]="['/studyPrograms']"
+          routerLinkActive="active">
+    Study Programs</button>
+</h1>
+<div>
+  <router-outlet></router-outlet>
+</div>

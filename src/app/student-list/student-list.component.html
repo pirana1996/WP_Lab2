@@ -1,0 +1,10 @@
+<ul class="list-group" style="width:50%">
+  <li *ngFor="let student of students" (click)="onClick(student)" class="list-group-item">
+    <a [routerLink]="['/details', student.indeks]"
+       routerLinkActive="active"
+    >{{student.name}} {{student.lastName}}</a>
+  </li>
+</ul>
+<button routerLink="/new" routerLinkActive="active">
+  Create</button>
+

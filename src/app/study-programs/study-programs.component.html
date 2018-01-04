@@ -1,0 +1,11 @@
+<ul class="list-group" style="width:50%">
+  <li *ngFor="let studyProgram of programs" class="list-group-item">
+    <a>
+      {{studyProgram.id}} {{studyProgram.name}}
+      <button
+        [routerLink]="['/list']"
+        routerLinkActive="active"
+        (click)="deleteProgram(studyProgram)">delete</button></a>
+  </li>
+</ul>
+

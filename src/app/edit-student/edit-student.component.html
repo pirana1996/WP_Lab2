@@ -1,0 +1,11 @@
+<form [formGroup]="rForm" (ngSubmit)="submit(rForm.value)">
+  <label>Ime: </label>
+  <input type="text" formControlName="name"><br>
+  <label>Prezime: </label>
+  <input type="text" formControlName="lastName"><br>
+  <label>Indeks: </label>
+  <input type="text" formControlName="indeks"><br>
+  <label>Nasoka: </label>
+  <input type="text" formControlName="studyProgramName"><br>
+  <button type="submit">Save</button>
+</form>

@@ -1,0 +1,15 @@
+<div  *ngIf="student"> <!--Uslovot ne dozvoluva da bide student == null? -->
+  <div>
+    <label>Ime: </label> {{student.name}}<br>
+    <label>Prezime: </label> {{student.lastName}}<br>
+    <label>Indeks: </label> {{student.indeks}}<br>
+    <label>Nasoka: </label> {{student.studyProgram.name}}<br>
+  </div>
+  <button [routerLink]="['/edit', student.indeks]"
+          routerLinkActive="active">
+    Edit</button>
+  <button (click)="deleteStudent()"
+          [routerLink]="['/list']"
+          routerLinkActive="active">
+    Delete</button>
+</div>
